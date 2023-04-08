@@ -32,10 +32,12 @@ body {
   background: url(./assets/bg-mobile2.jpg) no-repeat;
   color: rgba(255, 255, 255, 1);
   font-family: "Inter", sans-serif;
+  max-width: 600px;
+  width: 100%;
 }
 /* header */
 header {
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
 }
 .content-header {
@@ -55,7 +57,7 @@ header {
 }
 /* menu reveal */
 .menu {
-  width: 60%;
+  width: 0;
   height: 100%;
   z-index: 9;
   position: fixed;

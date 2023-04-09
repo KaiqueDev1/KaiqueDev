@@ -164,13 +164,13 @@ header {
   text-shadow: 0 0 10px;
 }
 /* footer menu */
-.footer-menu{
+.footer-menu {
   position: absolute;
   top: 680px;
   right: 0;
   left: 0;
 }
-.footer-menu h3{
+.footer-menu h3 {
   text-align: center;
   font-size: 4vw;
   font-family: "poppins";
@@ -181,7 +181,7 @@ header {
 /* main */
 main {
   max-width: 100%;
-  height: 100vh;
+  height: 85vh;
 }
 /* animation cube */
 .cube {
@@ -291,20 +291,22 @@ main {
   font-family: "Poppins";
 }
 /* botoes atalho main- repositorio e linkedin */
-.button-main-atalho{
+.button-main-atalho {
   position: relative;
   top: 320px;
   left: 15%;
 }
-.container-buttons{
+.container-buttons {
   display: flex;
   gap: 20px;
 }
-.btn-repositorio, .btn-linkedin{
+.btn-repositorio,
+.btn-linkedin {
   background: transparent;
 }
 
-.btn-repositorio a, .btn-linkedin a {
+.btn-repositorio a,
+.btn-linkedin a {
   color: rgba(0, 4, 255, 1);
   font-family: "poppins";
   display: inline-block;
@@ -321,7 +323,8 @@ main {
   font-weight: 500;
   background-color: #f6f6f6;
 }
-.btn-repositorio a:before, .btn-linkedin a::before{
+.btn-repositorio a:before,
+.btn-linkedin a::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -330,34 +333,81 @@ main {
   width: 200px;
   border-radius: 50%;
 }
-.btn-repositorio a:hover, .btn-linkedin a:hover,
+.btn-repositorio a:hover,
+.btn-linkedin a:hover,
 .wpp a:hover {
   color: #fff;
   transform: scale(1.1);
   background-color: rgba(0, 4, 255, 1);
   transition: background 0.5s;
 }
-.btn-repositorio a::before, .btn-linkedin a::before {
+.btn-repositorio a::before,
+.btn-linkedin a::before {
   top: 100%;
   left: 100%;
   transition: all 0.7s;
 }
-.btn-repositorio a:hover a::before, .btn-linkedin a:hover a:before {
+.btn-repositorio a:hover a::before,
+.btn-linkedin a:hover a:before {
   top: -30px;
   left: -30px;
 }
-.btn-repositorio a:active a::before, .btn-linkedin a:active a::before {
+.btn-repositorio a:active a::before,
+.btn-linkedin a:active a::before {
   background: #3a0ca3;
   transition: background 0s;
 }
 /* SOBRE  MIM */
-#sobre-mim{
+#sobre-mim {
   max-width: 100%;
-  height: 75vh;
-  background:  RGB(28 32 39);
+  height: 85vh;
+  background: RGB(28 32 39);
 }
-.container-sobre{
+.container-sobre {
   display: flex;
   flex-direction: column;
-
+}
+.foto{
+  text-align: center;
+}
+.foto img{
+  width: 150px;
+  border-radius: 100%;
+  border: 5px solid rgba(0, 4, 255, 1);
+}
+/* text sobre */
+.text-sobre{
+  text-align: center;
+}
+.text-sobre h2{
+  font-size: 7vw;
+  margin: 10px 0;
+}
+.text-sobre p{
+  font-size: 4vw;
+  text-align: justify;
+  font-family: "Poppins";
+  margin: 0 20px;
+}
+/* btn curriculo */
+.button-curriculo{
+  text-align: center;
+  margin: 50px;
+}
+.btn-curriculo{
+  padding: 15px 35px;
+  border: 3px solid rgba(0, 4, 255, 1);
+  border-radius: 10px;
+  background: transparent;
+}
+.btn-curriculo:hover{
+  background: rgba(0, 4, 255, 1);
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  box-shadow: 0 0 20px;
+}
+.btn-curriculo a{
+  font-size: 5vw;
+  font-family: "Poppins" sans-serif;
+  color: rgba(255, 255, 255, 1);
 }

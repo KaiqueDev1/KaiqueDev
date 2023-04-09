@@ -78,7 +78,7 @@ header {
   color: rgba(255, 255, 255, 1);
 }
 .links-menu {
-  margin: 100px 20px;
+  margin: 40px 20px;
 }
 .links-menu nav {
   display: flex;
@@ -160,4 +160,173 @@ header {
 .email-menu:hover {
   color: rgba(6, 52, 179, 1);
   text-shadow: 0 0 10px;
+}
+/* main */
+main {
+  max-width: 100%;
+}
+/* animation cube */
+.cube {
+  position: relative;
+  top: 10px;
+  left: 300px;
+  width: 40px;
+  height: 40px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+.cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.parte span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000000, rgb(0, 2, 161));
+  transform: rotateY(calc(90deg * var(--i))) translateZ(20px);
+}
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: #222;
+  transform: rotateX(90deg) translateZ(20px);
+}
+
+.top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: rgb(0, 2, 161);
+  transform: translateZ(-65px);
+  filter: blur(20px);
+  box-shadow: 0 0 120px rgba(4, 0, 255, 0.2) 0 0 200px rgba(4, 0, 255, 0.4) 0 0
+    40px rgba(0, 4, 255, 0.6) 0 0 400px rgba(38, 0, 255, 0.8) 0 0 500px
+    rgb(0, 2, 161);
+}
+/* mini text */
+.name-barra {
+  font-size: 4.5vw;
+  color: rgb(0, 17, 255);
+  font-family: "Poppins";
+  font-weight: 700;
+  position: relative;
+  left: 90px;
+  top: 40px;
+  text-shadow: 0 0 5px #000;
+}
+.left-barra:before {
+  transition: 0.4s;
+  content: "";
+  position: absolute;
+  top: 185px;
+  left: 25px;
+  bottom: 10px;
+  width: 15%;
+  height: 3px;
+  background-color: rgb(0, 4, 255);
+}
+
+/* text principal */
+.text-principal {
+  position: relative;
+  top: 120px;
+  left: 20px;
+  font-family: "poppins";
+  font-weight: 500;
+}
+.text-principal h1 {
+  font-weight: 500;
+  font-family: "Poppins";
+  font-size: 8vw;
+}
+.name-autor {
+  color: rgb(0, 17, 255);
+  font-size: 8vw;
+  font-family: "poppins";
+  font-weight: 800;
+}
+.text-principal p {
+  font-size: 8vw;
+  font-family: "Poppins";
+}
+/* botoes atalho main- repositorio e linkedin */
+.button-main-atalho{
+  position: relative;
+  top: 200px;
+  left: 15%;
+}
+.container-buttons{
+  display: flex;
+  gap: 20px;
+}
+.btn-repositorio, .btn-linkedin{
+  background: transparent;
+}
+
+.btn-repositorio a, .btn-linkedin a {
+  color: rgba(0, 4, 255, 1);
+  font-family: "poppins";
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgba(0, 4, 255, 1);
+  transition: color 3s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  background-color: #f6f6f6;
+}
+.btn-repositorio a:before, .btn-linkedin a::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: rgba(0, 4, 255, 1);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+.btn-repositorio a:hover, .btn-linkedin a:hover,
+.wpp a:hover {
+  color: #fff;
+  transform: scale(1.1);
+  background-color: rgba(0, 4, 255, 1);
+  transition: background 0.5s;
+}
+.btn-repositorio a::before, .btn-linkedin a::before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+.btn-repositorio a:hover a::before, .btn-linkedin a:hover a:before {
+  top: -30px;
+  left: -30px;
+}
+.btn-repositorio a:active a::before, .btn-linkedin a:active a::before {
+  background: #3a0ca3;
+  transition: background 0s;
 }

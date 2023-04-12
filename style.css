@@ -29,7 +29,7 @@ a {
 }
 /* estilizacao */
 body {
-  background: url(./assets/bg-mobile2.jpg) no-repeat;
+  background: url(./assets/img/background/bg-mobile2.jpg) no-repeat;
   color: rgba(255, 255, 255, 1);
   font-family: "Inter", sans-serif;
   max-width: 600px;
@@ -410,4 +410,74 @@ main {
   font-size: 5vw;
   font-family: "Poppins" sans-serif;
   color: rgba(255, 255, 255, 1);
+}
+/*  habilidades */
+#habilidades{
+  background: RGB(28 32 39);
+  height: 105vH;
+}
+.container-habilidades, .container-tecnologias{
+  width: 100%;
+  padding-top: 50px;
+}
+.abertura-habilidades{
+  text-align: center;
+}
+.abertura-habilidades h3{
+  font-size: 9vw;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 20px 20px 15px #000;
+}
+/* box tecnologias */
+.container-tecnologias{
+  display: grid;
+  gap: 30px;
+}
+.box-tec{ 
+  margin: 0 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 1);
+  padding: 15px;
+  display: flex;
+}
+.box-tec img{
+
+  width: 25%;
+}
+.txt-tec{
+  width: 75%;
+}
+.txt-tec h3{
+  font-size: 6vw;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0 0 20px #000;
+}
+.txt-tec p{
+  font-size: 4vw;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+/* button de acesso a documentacao */
+.btn-tec{
+  margin: 15px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  animation: tec 3s infinite linear;
+}
+@keyframes tec {
+  0%{
+    border: 1px solid #3a0ca3;
+  }
+  100%{
+    border: 1px solid #fafafa;
+  }
+}
+.btn-tec a{
+  color: rgba(255, 255, 255, 1);
+  font-size: 5vw;
+  font-family: 'Inter';
 }

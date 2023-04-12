@@ -15,6 +15,7 @@ font-family: 'Poppins', sans-serif; */
   --bg-mobile: url("./assets/bg-mobile2.jpg");
 }
 /* reset */
+
 * {
   margin: 0;
   border: 0;
@@ -34,6 +35,11 @@ body {
   font-family: "Inter", sans-serif;
   max-width: 600px;
   width: 100%;
+}
+main, #sobre-mim, #habilidades, #Portfolio, #contato{
+  max-width: 600px;
+  width: 100%;
+  
 }
 /* header */
 header {
@@ -367,74 +373,75 @@ main {
   display: flex;
   flex-direction: column;
 }
-.foto{
+.foto {
   text-align: center;
 }
-.foto img{
+.foto img {
   width: 150px;
   border-radius: 100%;
   border: 5px solid rgba(0, 4, 255, 1);
 }
 /* text sobre */
-.text-sobre{
+.text-sobre {
   text-align: center;
 }
-.text-sobre h2{
+.text-sobre h2 {
   font-size: 7vw;
   margin: 10px 0;
 }
-.text-sobre p{
+.text-sobre p {
   font-size: 4vw;
   text-align: justify;
   font-family: "Poppins";
   margin: 0 20px;
 }
 /* btn curriculo */
-.button-curriculo{
+.button-curriculo {
   text-align: center;
   margin: 50px;
 }
-.btn-curriculo{
+.btn-curriculo {
   padding: 15px 35px;
   border: 3px solid rgba(0, 4, 255, 1);
   border-radius: 10px;
   background: transparent;
 }
-.btn-curriculo:hover{
+.btn-curriculo:hover {
   background: rgba(0, 4, 255, 1);
   transform: scale(1.1);
   transition: transform 0.3s;
   box-shadow: 0 0 20px;
 }
-.btn-curriculo a{
+.btn-curriculo a {
   font-size: 5vw;
   font-family: "Poppins" sans-serif;
   color: rgba(255, 255, 255, 1);
 }
 /*  habilidades */
-#habilidades{
+#habilidades {
   background: RGB(28 32 39);
-  height: 105vH;
+  height: 105vh;
 }
-.container-habilidades, .container-tecnologias{
+.container-habilidades,
+.container-tecnologias {
   width: 100%;
   padding-top: 50px;
 }
-.abertura-habilidades{
+.abertura-habilidades {
   text-align: center;
 }
-.abertura-habilidades h3{
+.abertura-habilidades h3 {
   font-size: 9vw;
   color: rgba(255, 255, 255, 1);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-shadow: 20px 20px 15px #000;
 }
 /* box tecnologias */
-.container-tecnologias{
+.container-tecnologias {
   display: grid;
   gap: 30px;
 }
-.box-tec{ 
+.box-tec {
   margin: 0 10px;
   border: 1px solid #000;
   border-radius: 10px;
@@ -442,25 +449,24 @@ main {
   padding: 15px;
   display: flex;
 }
-.box-tec img{
-
+.box-tec img {
   width: 25%;
 }
-.txt-tec{
+.txt-tec {
   width: 75%;
 }
-.txt-tec h3{
+.txt-tec h3 {
   font-size: 6vw;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-shadow: 0 0 20px #000;
 }
-.txt-tec p{
+.txt-tec p {
   font-size: 4vw;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
 }
 /* button de acesso a documentacao */
-.btn-tec{
+.btn-tec {
   margin: 15px 0;
   padding: 5px 10px;
   border-radius: 5px;
@@ -469,36 +475,36 @@ main {
   animation: tec 3s infinite linear;
 }
 @keyframes tec {
-  0%{
+  0% {
     border: 1px solid #3a0ca3;
   }
-  100%{
+  100% {
     border: 1px solid #fafafa;
   }
 }
-.btn-tec a{
+.btn-tec a {
   color: rgba(255, 255, 255, 1);
   font-size: 5vw;
-  font-family: 'Inter';
+  font-family: "Inter";
 }
 /* portfolio */
-#Portfolio{
+#Portfolio {
   background: RGB(28 32 39);
   height: 215vh;
 }
-.apresentacao-portfolio{
+.apresentacao-portfolio {
   padding: 20px 0;
 }
-.apresentacao-portfolio h3{
+.apresentacao-portfolio h3 {
   font-size: 10vw;
   text-align: center;
   text-shadow: 20px 20px 15px #000;
 }
-.container-box-portfolio{
+.container-box-portfolio {
   text-align: center;
   gap: 20px;
 }
-.box-projeto{
+.box-projeto {
   box-shadow: 10px 20px 20px #000;
   margin: 20px 10px;
   padding: 15px;
@@ -506,19 +512,19 @@ main {
   background: RGB(18 19 29);
 }
 
-.txt-projeto h3{
+.txt-projeto h3 {
   text-shadow: 0 0 10px #fafafa;
   font-size: 6vw;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.btn-link-projeto{
+.btn-link-projeto {
   padding: 15px 25px;
-  box-shadow: 0 0 10px ;
+  box-shadow: 0 0 10px;
   border-radius: 5px;
   margin: 10px 0;
   background-color: #3a0ca3;
 }
-.btn-link-projeto a{
+.btn-link-projeto a {
   font-size: 4vw;
   color: rgba(255, 255, 255, 1);
 }

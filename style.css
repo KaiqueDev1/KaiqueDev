@@ -39,6 +39,8 @@ body {
 main, #sobre-mim, #habilidades, #Portfolio, #contato{
   max-width: 600px;
   width: 100%;
+  background: RGB(28 32 39);
+
   
 }
 /* header */
@@ -528,6 +530,16 @@ main {
   font-size: 4vw;
   color: rgba(255, 255, 255, 1);
 }
+/* contato */
 #contato{
-  background-color: #001235;
+  height: 105vw;
+}
+.container-ctc{
+  width: 100%;
+}
+.apresentacao-ctc h3{
+  font-size: 8vw;
+  text-align: center;
+  padding: 10px 0;
+  text-shadow: 0 0 10px #000;
 }

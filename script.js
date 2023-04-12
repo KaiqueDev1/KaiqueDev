@@ -9,3 +9,4 @@ document.getElementById("btn-close").addEventListener("click", function () {
 function closeLink() {
   document.getElementById("menu").style.width = "0";
 }
+

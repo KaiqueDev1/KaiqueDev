@@ -35,7 +35,10 @@
                 <a onclick="closeLink()" class="links-mobile" href="#sobre-mim"
                   >Sobre mim</a
                 >
-                <a onclick="closeLink()" class="links-mobile" href="#habilidades"
+                <a
+                  onclick="closeLink()"
+                  class="links-mobile"
+                  href="#habilidades"
                   >Habilidades</a
                 >
                 <a onclick="closeLink()" class="links-mobile" href="#Portfolio"
@@ -85,7 +88,8 @@
           </div>
         </div>
       </section>
-    </header><!-- cabecalho-->
+    </header>
+    <!-- cabecalho-->
     <main id="main">
       <div class="cube">
         <div class="top">K</div>
@@ -118,7 +122,8 @@
           </button>
         </div>
       </section>
-    </main><!-- page principal-->
+    </main>
+    <!-- page principal-->
     <section id="sobre-mim">
       <div class="container-sobre">
         <div class="foto">
@@ -149,7 +154,8 @@
           </button>
         </div>
       </div>
-    </section><!-- sobre mim-->
+    </section>
+    <!-- sobre mim-->
     <section id="habilidades">
       <div class="container-habilidades">
         <div class="abertura-habilidades">
@@ -158,32 +164,54 @@
         <div class="tecnologias">
           <div class="container-tecnologias">
             <div class="box-tec">
-              <img src="./assets/img/tecnologias/icons8-html-5.svg" alt="">
+              <img src="./assets/img/tecnologias/icons8-html-5.svg" alt="" />
               <div class="txt-tec">
                 <h3>Html</h3>
                 <p>Linguagem de Marcação de Hipertexto</p>
                 <button class="btn-tec">
-                  <a href="Linguagem de Marcação de Hipertexto —, o HTML é o componente base da web. Isso quer dizer que ele permite a construção de websites e a inserção de novos conteúdos, como imagens e vídeos, por meio dos hipertextos.">Acesse a documentação</a>
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/pt-BR/docs/Web/Html"
+                    >Acesse a documentação</a
+                  >
                 </button>
               </div>
             </div>
             <div class="box-tec">
-              <img src="./assets/img/tecnologias/icons8-css3.svg" alt="">
+              <img src="./assets/img/tecnologias/icons8-css3.svg" alt="" />
               <div class="txt-tec">
                 <h3>Css</h3>
-                <p>CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo.</p>
+                <p>
+                  CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é
+                  uma linguagem de estilo.
+                </p>
                 <button class="btn-tec">
-                  <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">Acesse a documentação</a>
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+                    >Acesse a documentação</a
+                  >
                 </button>
               </div>
             </div>
             <div class="box-tec">
-              <img src="./assets/img/tecnologias/icons8-javascript.svg" alt="">
+              <img
+                src="./assets/img/tecnologias/icons8-javascript.svg"
+                alt=""
+              />
               <div class="txt-tec">
                 <h3>JavaScript</h3>
-                <p>O JavaScript é uma linguagem multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos.</p>
+                <p>
+                  O JavaScript é uma linguagem multi-paradigma e dinâmica,
+                  suportando estilos de orientação a objetos, imperativos e
+                  declarativos.
+                </p>
                 <button class="btn-tec">
-                  <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">Acesse a documentação</a>
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+                    >Acesse a documentação</a
+                  >
                 </button>
               </div>
             </div>
@@ -191,7 +219,93 @@
         </div>
       </div>
     </section>
-    <section id="Portfolio"></section>
+    <section id="Portfolio">
+      <div class="container-portfolio">
+        <div class="apresentacao-portfolio">
+          <h3>Portfólio</h3>
+        </div>
+        <div class="container-box-portfolio">
+          <div class="box-projeto">
+            <div class="midia-projeto" id="midiaProjeto">
+              <video
+                width="100%"
+                height="260"
+                controls="controls"
+                autoplay="autoplay"
+                src="./assets/Portfolio/PersonalTrainer.mkv"
+              ></video>
+            </div>
+            <div class="txt-projeto" id="txtProjeto">
+              <h3>Personal trainer</h3>
+              <button class="btn-link-projeto">
+                <a
+                  target="_blank"
+                  href="https://kaiquezpriv1.github.io/PersonalTrainer"
+                  >Acessar projeto</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="box-projeto">
+            <div class="midia-projeto" id="midiaProjeto">
+              <video
+                width="100%"
+                height="260"
+                controls="controls"
+                autoplay="autoplay"
+                src="./assets/Portfolio/projetoRocketSeat.mkv"
+              ></video>
+            </div>
+            <div class="txt-projeto" id="txtProjeto">
+              <h3>Projeto RocketSeat</h3>
+              <button class="btn-link-projeto">
+                <a target="_blank" href="https://kaiquezpriv1.github.io/Projeto-rocketSeat"
+                  >Acessar projeto</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="box-projeto">
+            <div class="midia-projeto" id="midiaProjeto">
+              <video
+                width="100%"
+                height="260"
+                controls="controls"
+                autoplay="autoplay"
+                src="./assets/Portfolio/exploreLab.mkv"
+              ></video>
+            </div>
+            <div class="txt-projeto" id="txtProjeto">
+              <h3>Explore Lab</h3>
+              <button class="btn-link-projeto">
+                <a target="_blank" href="http://explore-lab-azure.vercel.app/"
+                  >Acessar projeto</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="box-projeto">
+            <div class="midia-projeto" id="midiaProjeto">
+              <video
+                width="100%"
+                height="260"
+                controls="controls"
+                autoplay="autoplay"
+                src="./assets/Portfolio/phCakes.mkv"
+              ></video>
+            </div>
+            <div class="txt-projeto" id="txtProjeto">
+              <h3 class="ttl-ph">Ph Cakes</h3>
+              <button class="btn-link-projeto">
+                <a target="_blank" href="https://kaiquezpriv1.github.io/PhCakes"
+                  >Acessar projeto</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="contato"></section>
     <script src="./script.js"></script>
   </body>

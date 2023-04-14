@@ -532,14 +532,61 @@ main {
 }
 /* contato */
 #contato{
-  height: 105vw;
+  height: 75vh;
 }
 .container-ctc{
-  width: 100%;
+  padding: 20px 0;
 }
-.apresentacao-ctc h3{
-  font-size: 8vw;
+.apresentacao-ctc{
+  display: flex;
+  justify-content: center;
+}
+.apresentacao-ctc img{
+  width: 90px;
+}
+/*  */
+.container-redes-ctc{
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.button-contato{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.button-contato h3{
+  font-size: 9vw;
   text-align: center;
-  padding: 10px 0;
-  text-shadow: 0 0 10px #000;
+  text-shadow: 0 0 15px #3a0ca3;
+}
+.btn-ctt{
+  background: transparent;
+  display: flex;
+  margin: auto;
+}
+.btn-ctt i{
+  font-size: 5vw;
+  margin-left: 5px;
+}
+.btn-ctt a{
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.btn-ctt a:hover{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+/* footer */
+footer{
+  background: RGB(28 32 39);
+  text-align: center;
+  height: 10vh;
+}
+.text-footer{
+  margin: auto;
+}
+.text-footer a{
+  color: #3a0ca3;
 }

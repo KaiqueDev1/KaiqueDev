@@ -23,3 +23,10 @@ scrollMain.addEventListener("click", () => {
       behavior: "smooth",
     });
 });
+const scrollMainDsk = document.querySelector(".icon-button-dsk");
+scrollMainDsk.addEventListener("click", () => {
+    window.scroll({
+      top: 700,
+      behavior: "smooth",
+    });
+});

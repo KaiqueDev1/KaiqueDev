@@ -28,8 +28,8 @@ const habilidadesElement = document.querySelector("#habilidades")
 
 function exibirHabilidade() {
     const containerHabilidade = document.createElement("div")
-    containerHabilidade.classList.add("content-habilidade")
-
+    containerHabilidade.classList.add("content-habilidade-mobile")
+   
     habilidadesElement.appendChild(containerHabilidade)
 
     habilidades.forEach(habilidade => {
@@ -48,6 +48,28 @@ function exibirHabilidade() {
     })
 }
 exibirHabilidade();
+function exibirHabilidadeDsk() {
+    const containerHabilidade = document.createElement("div")
+    containerHabilidade.classList.add("content-habilidade-dsk")
+   
+    habilidadesElement.appendChild(containerHabilidade)
+
+    habilidades.forEach(habilidade => {
+        containerHabilidade.innerHTML+=`
+        <div class="box">
+            <img src="`+habilidade.image+`" />
+            <div class="text-bx">
+              <h3>`+habilidade.title+`</h3>
+              <p>`+habilidade.descricao+`</p>
+              <button class="btn-documentacao">
+                <a href="`+habilidade.documentacao+`">Ver documentação</a>
+              </button>
+            </div>
+        </div>
+        `
+    })
+}
+exibirHabilidadeDsk();
 
 
 const portfolio = [
@@ -81,7 +103,7 @@ const portfolioElement = document.querySelector("#portfolio");
 
 function exibirPortfolio() {
     const containerPortfolio = document.createElement("div");
-    containerPortfolio.classList.add("content-portfolio");
+    containerPortfolio.classList.add("content-portfolio-mobile");
 
     portfolioElement.appendChild(containerPortfolio)
     portfolio.forEach(pt => {
@@ -112,3 +134,36 @@ function exibirPortfolio() {
     })
 }
 exibirPortfolio();
+function exibirPortfolioDsk() {
+    const containerPortfolio = document.createElement("div");
+    containerPortfolio.classList.add("content-portfolio-dsk");
+
+    portfolioElement.appendChild(containerPortfolio)
+    portfolio.forEach(pt => {
+        containerPortfolio.innerHTML +=
+          `
+        <div class="box-dsk">
+            <video
+                width="40%"
+                height="260"
+                controls="controls"
+                loop="loop"
+                muted="muted"
+                autoplay="autoplay"
+                src="` +pt.midia +`">
+                </video>
+                <div class="text-bx-dsk">
+                <h3>` +
+              pt.title +
+              `</h3>
+                </div>
+            <button class="btn-documentacao-dsk">
+                <a href="` +
+          pt.url +
+          `">Visitar o site !</a>
+            </button>
+        </div>
+        `;
+    })
+}
+exibirPortfolioDsk();

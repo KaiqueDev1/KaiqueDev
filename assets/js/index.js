@@ -144,26 +144,24 @@ function exibirPortfolioDsk() {
           `
         <div class="box-dsk">
             <video
-                width="40%"
-                height="260"
+                width="100%"
+                height="auto"
+                id="midia-ptf"
                 controls="controls"
                 loop="loop"
                 muted="muted"
                 autoplay="autoplay"
                 src="` +pt.midia +`">
-                </video>
-                <div class="text-bx-dsk">
-                <h3>` +
-              pt.title +
-              `</h3>
-                </div>
-            <button class="btn-documentacao-dsk">
-                <a href="` +
-          pt.url +
-          `">Visitar o site !</a>
+            </video>
+            <button class="btn-documentacao-ptf">
+              <a href="` +
+              pt.url +
+              `">Ver documentação</a>
             </button>
+            
         </div>
         `;
     })
 }
 exibirPortfolioDsk();
+

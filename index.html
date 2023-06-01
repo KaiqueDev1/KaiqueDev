@@ -26,30 +26,44 @@
         <i class="ri-menu-fill"></i>
       </div>
       <div class="menu-mobile" id="menu-mobile">
-        <div class="close-menu">
-          <i class="ri-close-fill"></i>
-        </div>
         <nav class="nav-mobile">
-          <li><a class="link-menu-mb" href="#content-mobile">Início</a></li>
-          <li><a class="link-menu-mb" href="#sobre-mim">Sobre mim</a></li>
-          <li><a class="link-menu-mb" href="#habilidades">Habilidades</a></li>
-          <li><a class="link-menu-mb" href="#portfolio">Portfólio</a></li>
-          <li><a class="link-menu-mb" href="#footer">Contato</a></li>
+          <div class="close-menu">
+            <i class="ri-close-fill"></i>
+          </div>
+          <div class="links-mobile-box">
+
+            <li>
+              <a class="link-menu-mb" href="#content-mobile" onclick="mobileLink()">Início</a>
+            </li>
+            <li>
+              <a class="link-menu-mb" href="#sobre-mim" onclick="mobileLink()">Sobre mim</a>
+            </li>
+            <li>
+              <a class="link-menu-mb" href="#habilidades" onclick="mobileLink()">Habilidades</a>
+            </li>
+            <li>
+              <a class="link-menu-mb" href="#portfolio" onclick="mobileLink()">Portfólio</a>
+            </li>
+            <li>
+              <a class="link-menu-mb" href="#footer" onclick="mobileLink()">Contato</a>
+            </li>
+          </div>
+          <!-- -------------------------------- -->
+          <div class="redesSociais-menu">
+            <a href="https://api.whatsapp.com/send/?phone=11933323486&text&type=phone_number&app_absent=0" target="_blank" class="icon-menuSocial wpp-menu">
+              <i class="ri-whatsapp-fill"></i>
+            </a>
+            <a href="https://instagram.com/kaique_developer?igshid=YmMyMTA2M2Y=" target="_blank" class="icon-menuSocial instagram-menu">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://is.gd/kaique_email" target="_blank" class="icon-menuSocial email-menu">
+              <i class="ri-mail-fill"></i>
+            </a>
+          </div>
+          <div class="credito-menuMobile">
+            <span class="credit-menu">2023 &copy; <a href="" target="_blank">@kaiqueZpriv1</a>All Right Reservad</span>
+          </div>
         </nav>
-        <div class="redesSociais-menu">
-          <a href="https://api.whatsapp.com/send/?phone=11933323486&text&type=phone_number&app_absent=0" target="_blank" class="icon-menuSocial wpp-menu">
-            <i class="ri-whatsapp-fill"></i>
-          </a>
-          <a href="https://instagram.com/kaique_developer?igshid=YmMyMTA2M2Y=" target="_blank" class="icon-menuSocial instagram-menu">
-            <i class="ri-instagram-fill"></i>
-          </a>
-          <a href="https://is.gd/kaique_email" target="_blank" class="icon-menuSocial email-menu">
-            <i class="ri-mail-fill"></i>
-          </a>
-        </div>
-        <div class="credito-menuMobile">
-          <span class="credit-menu">2023 &copy; <a href="" target="_blank">@kaiqueZpriv1</a>All Right Reservad</span>
-        </div>
       </div>
     </div>
     <div class="content-desktop">
@@ -147,7 +161,7 @@
   <section id="portfolio">
     <h3 class="apresentacao-hab">Projetos</h3>
   </section>
-  <footer>
+  <footer id="footer">
     <h3 class="apresentacao-hab">Contatos</h3>
     <div class="content-footer">
       <a href="https://api.whatsapp.com/send/?phone=11933323486&text&type=phone_number&app_absent=0">WhatsApp</a>

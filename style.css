@@ -352,202 +352,8 @@ footer{
 .content-portfolio-dsk {
   display: none;
 }
-@media screen and (min-width: 1080px) {
-  .content-mobile-sobre,
-  .content-mobile-main,
-  .content-mobile {
-    display: none;
-  }
-  .content-desktop,
-  .content-habilidade-dsk,
-  .content-main-dsk,
-  .content-portfolio-dsk {
-    display: block;
-  }
-  header{
-    position: fixed;
-    height: 85px;
-  }
-  .content-desktop{
-    position: fixed;
-    background-color: rgb(33, 33, 33);
-    width: 100%;
-    display: flex;
-    height: 85px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo{
-    margin-left: 10px;
-  }
-  .logo img{
-    width: 160px;
-  }
-  .menu-dsk{
-    display: flex;
-    gap: 30px;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .menu-dsk a{
-    font-size: 2vw;
-  }
-  .btn-dsk-hdr{
-    padding: 10px 25px;
-    margin-right: 20px;
-    background-color: var(--verde-agua);
-    border: none;
-    border-radius: 5px;
-  }
-  .btn-dsk-hdr a {
-    font-size: 1.5vw;
-    color: var(--branco);
-    font-weight: 700;
-  }
-  .btn-dsk-hdr:hover {
-    transition: 1s transform;
-    transform: scale(1.1);
-  }
 
-  .content-main-dsk {
-    display: flex;
-    padding-top: 80px;
-    margin-bottom: 250px;
-    justify-content: space-between;
-  }
-  .image-main {
-    margin: 150px 0 0 130px;
-  }
-  .image-main img {
-    border: 3px solid var(--verde-agua);
-    border-radius: 100%;
-    box-shadow: 0 0 10px var(--verde-agua);
-    animation: image infinite 3s linear;
-    width: 250px;
-  }
-  .text-dsk-main {
-    margin: 70px 100px 0 50px;
-  }
-  .text-dsk-main h3 {
-    font-size: 1.8vw;
-    font-weight: 200;
-    color: var(--cinzaC);
-  }
-  .text-dsk-main h1 {
-    font-size: 4vw;
-    margin: 20px 0;
-    color: var(--branco);
-  }
-  .text-dsk-main p {
-    font-size: 2vw;
-    font-weight: 400;
-    color: var(--branco);
-  }
-  .links-main-dsk {
-    margin: 50px 0 0 0;
-    gap: 20px;
-    display: flex;
-    align-items: center;
-  }
-  .btn-main-dsk {
-    border: none;
-    box-shadow: 0 0 5px var(--preto);
-    padding: 10px 25px;
-    border-radius: 10px;
-  }
-  .btn-main-dsk:hover {
-    transition: 0.3s transform;
-    transform: scale(1.1);
-  }
-  .btn-main-dsk a {
-    font-size: 2.5vw;
-    color: var(--branco);
-  }
-
-  /*  habilidades */
-  .apresentacao-hab {
-    font-size: 4vw;
-  }
-
-  .content-habilidade-mobile,
-  .content-portfolio-mobile {
-    display: none;
-  }
-
-  .content-habilidade-dsk {
-    display: block;
-  }
-
-  .box {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    text-align: start;
-  }
-
-  .box img {
-    width: 150px;
-    margin-left: 100px;
-  }
-
-  .text-bx {
-    margin: 0 100px 0 50px;
-  }
-
-  .text-bx h3 {
-    font-size: 3vw;
-    font-weight: 700;
-  }
-
-  .text-bx p {
-    font-size: 2.5vw;
-    font-weight: 400;
-    margin: 0 0 20px 0;
-  }
-  .btn-documentacao a {
-    font-size: 2vw;
-  }
-
-  .content-portfolio-dsk {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    justify-content: center;
-    gap: 30px;
-    align-items: center;
-    
-  }
-  .box-dsk{
-    text-align: center;
-  }
-  .box-dsk video{
-    box-shadow: 0 0 10px var(--cinzaC);
-
-  }
-  .btn-documentacao-ptf{
-    margin: 15px 0;
-    padding: 10px 15px;
-    background-color: var(--verde-agua);
-    border: none;
-  }
-  .btn-documentacao-ptf a{
-    font-size: 2vw;
-    color: var(--branco);
-    font-weight: 600;
-  }
-  /* footer */
-  .content-footer a {
-    font-size: 2vw;
-  }
-
-  .content-footer a:hover {
-    transform: scale(1.1);
-    transition: 0.8s;
-  }
-
-  .credit-footer {
-    font-size: 2vw;
-  }
-}
-@media  (max-width: 580px){
+@media (min-width: 420px) and (max-width: 580px){
   .burger i, .close i{
     font-size: 9vw;
   }
@@ -571,7 +377,7 @@ footer{
     margin: 0 20px;
   }
 }
-@media (max-width: 920px){
+@media (min-width: 580px) and (max-width: 920px){
   
   .cube{
     display: none;
@@ -650,7 +456,7 @@ footer{
     font-size: 3vw;
   }
 }
-@media (max-width: 1079px){
+@media (min-width: 920px) and (max-width: 1080px){
   .cube{
     display: none;
   }
@@ -729,7 +535,231 @@ footer{
       font-size: 2vw;
     }
 }
-@media (max-width: 1690px){
+
+@media (min-width: 1330px) {
+
+  .content-mobile-sobre,
+  .content-mobile-main,
+  .content-mobile, .cube {
+    display: none;
+  }
+
+  .content-desktop,
+  .content-habilidade-dsk,
+  .content-main-dsk,
+  .content-portfolio-dsk {
+    display: block;
+  }
+
+  header {
+    position: fixed;
+    height: 85px;
+  }
+
+  .content-desktop {
+    position: fixed;
+    background-color: rgb(33, 33, 33);
+    width: 100%;
+    display: flex;
+    height: 85px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .menu-dsk {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .menu-dsk a {
+    font-size: 2vw;
+  }
+
+  .btn-dsk-hdr {
+    padding: 10px 25px;
+    margin-right: 20px;
+    background-color: var(--verde-agua);
+    border: none;
+    border-radius: 5px;
+  }
+
+  .btn-dsk-hdr a {
+    font-size: 1.5vw;
+    color: var(--branco);
+    font-weight: 700;
+  }
+
+  .btn-dsk-hdr:hover {
+    transition: 1s transform;
+    transform: scale(1.1);
+  }
+
+  .content-main-dsk {
+    display: flex;
+    padding-top: 80px;
+    margin-bottom: 250px;
+    justify-content: space-between;
+  }
+
+  .image-main {
+    margin: 150px 0 0 130px;
+  }
+
+  .image-main img {
+    border: 3px solid var(--verde-agua);
+    border-radius: 100%;
+    box-shadow: 0 0 10px var(--verde-agua);
+    animation: image infinite 3s linear;
+    width: 250px;
+  }
+
+  .text-dsk-main {
+    margin: 70px 100px 0 50px;
+  }
+
+  .text-dsk-main h3 {
+    font-size: 1.8vw;
+    font-weight: 200;
+    color: var(--cinzaC);
+  }
+
+  .text-dsk-main h1 {
+    font-size: 4vw;
+    margin: 20px 0;
+    color: var(--branco);
+  }
+
+  .text-dsk-main p {
+    font-size: 2vw;
+    font-weight: 400;
+    color: var(--branco);
+  }
+
+  .links-main-dsk {
+    margin: 50px 0 0 0;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-main-dsk {
+    border: none;
+    box-shadow: 0 0 5px var(--preto);
+    padding: 10px 25px;
+    border-radius: 10px;
+  }
+
+  .btn-main-dsk:hover {
+    transition: 0.3s transform;
+    transform: scale(1.1);
+  }
+
+  .btn-main-dsk a {
+    font-size: 2.5vw;
+    color: var(--branco);
+  }
+
+  /*  habilidades */
+  .apresentacao-hab {
+    font-size: 4vw;
+  }
+
+  .content-habilidade-mobile,
+  .content-portfolio-mobile {
+    display: none;
+  }
+
+  .content-habilidade-dsk {
+    display: block;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    text-align: start;
+  }
+
+  .box img {
+    width: 150px;
+    margin-left: 100px;
+  }
+
+  .text-bx {
+    margin: 0 100px 0 50px;
+  }
+
+  .text-bx h3 {
+    font-size: 3vw;
+    font-weight: 700;
+  }
+
+  .text-bx p {
+    font-size: 2.5vw;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+  }
+
+  .btn-documentacao a {
+    font-size: 2vw;
+  }
+
+  .content-portfolio-dsk {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+
+  }
+
+  .box-dsk {
+    text-align: center;
+  }
+
+  .box-dsk video {
+    box-shadow: 0 0 10px var(--cinzaC);
+
+  }
+
+  .btn-documentacao-ptf {
+    margin: 15px 0;
+    padding: 10px 15px;
+    background-color: var(--verde-agua);
+    border: none;
+  }
+
+  .btn-documentacao-ptf a {
+    font-size: 2vw;
+    color: var(--branco);
+    font-weight: 600;
+  }
+
+  /* footer */
+  .content-footer a {
+    font-size: 2vw;
+  }
+
+  .content-footer a:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+  }
+
+  .credit-footer {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 1330px) and (max-width: 1690px){
   .logo img{
     margin-top: 5px;
     width: 200px;
@@ -775,7 +805,7 @@ footer{
     font-size: 1.5vw;
   }
 }
-@media (max-width: 1920px){
+@media (min-width: 1690px) and (max-width: 1920px){
   .logo img{
     margin-top: 5px;
     width: 190px;

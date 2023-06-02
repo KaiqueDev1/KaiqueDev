@@ -197,7 +197,7 @@ a{
   margin: 100px 0;
 }
 .text-main h1{
-  font-size: 11vw;
+  font-size: 9vw;
   text-align: center;
   color: var(--preto);
 }
@@ -268,7 +268,7 @@ a{
 .biografia p{
   font-size: 5vw;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.9);
+  color: var(--cinzaC);
   margin: 0 10px;
 }
 
@@ -297,7 +297,7 @@ a{
   color: var(--branco);
 }
 .text-bx p{
-  color: var(--branco);
+  color: var(--cinzaC);
   font-size: 5vw;
   font-weight: 600;
   margin: 0 10px;

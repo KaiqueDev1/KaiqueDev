@@ -1,4 +1,8 @@
 /*  animacao de cubo */
+::-webkit-scrollbar{
+  overflow: hidden;
+}
+
 :root{
   --color-wpp: rgb(10, 109, 97);
   --color-instagram: rgb(133, 8, 122);

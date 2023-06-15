@@ -1,4 +1,4 @@
-<h1 style="text-align: center">Meu portfólio</h1>
+<h1 align= "center">Meu portfólio</h1>
 
 <p style="text-align: center"> Projeto exclusivo feito para mostrar minhas habilidades e conhecimentos em Front-End</p>
 

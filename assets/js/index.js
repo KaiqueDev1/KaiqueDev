@@ -73,30 +73,30 @@ exibirHabilidadeDsk();
 
 
 const portfolio = [
-  {
-    id: 0,
-    midia: "./assets/js/video/PersonalTrainer.mkv",
-    title: "Personal Trainer",
-    url: "https://kaiquezpriv1.github.io/PersonalTrainer/",
-  },
+	{
+		id: 0,
+		midia: "./assets/js/video/PersonalTrainer.mkv",
+		title: "Personal Trainer",
+		url: "https://kaiquezpriv1.github.io/PersonalTrainer/",
+	},
   {
     id: 1,
-    midia: "./assets/js/video/projetoRocketSeat.mkv",
-    title: "Projeto RocketSeat",
-    url: "https://kaiquezpriv1.github.io/Projeto-rocketSeat/",
+    midia: "./assets/js/video/calculadora.mkv",
+    title: "Calculadora JS",
+    url: "https://kaiquezpriv1.github.io/calculadora/",
   },
-  {
-    id: 2,
-    midia: "./assets/js/video/exploreLab.mkv",
-    title: "Explore Lab",
-    url: "https://explore-lab-azure.vercel.app/",
-  },
-  {
-    id: 3,
-    midia: "./assets/js/video/phCakes.mkv",
-    title: "Ph Cakes",
-    url: "https://kaiquezpriv1.github.io/PhCakess/",
-  },
+	{
+		id: 2,
+		midia: "./assets/js/video/exploreLab.mkv",
+		title: "Explore Lab",
+		url: "https://explore-lab-azure.vercel.app/",
+	},
+	{
+		id: 3,
+		midia: "./assets/js/video/phCakes.mkv",
+		title: "Ph Cakes",
+		url: "https://kaiquezpriv1.github.io/PhCakess/",
+	},
 ];
 
 const portfolioElement = document.querySelector("#portfolio");
@@ -108,7 +108,7 @@ function exibirPortfolio() {
     portfolioElement.appendChild(containerPortfolio)
     portfolio.forEach(pt => {
         containerPortfolio.innerHTML +=
-          `
+					`
         <div class="box">
             <video
                 width="90%"
@@ -117,17 +117,19 @@ function exibirPortfolio() {
                 loop="loop"
                 muted="muted"
                 autoplay="autoplay"
-                src="` +pt.midia +`">
+                src="` +
+					pt.midia +
+					`">
                 </video>
                 <div class="text-bx">
                 <h3>` +
-              pt.title +
-              `</h3>
+					pt.title +
+					`</h3>
                 </div>
             <button class="btn-documentacao">
                 <a href="` +
-          pt.url +
-          `">Ver documentação</a>
+					pt.url +
+					`" target="_blank">Ver documentação</a>
             </button>
         </div>
         `;
@@ -156,7 +158,7 @@ function exibirPortfolioDsk() {
             <button class="btn-documentacao-ptf">
               <a href="` +
               pt.url +
-              `">Ver documentação</a>
+              `" target="_blank">Ver documentação</a>
             </button>
             
         </div>
